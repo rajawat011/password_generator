@@ -12,8 +12,8 @@
 <body>
     <main id="main-el" class="dark">
         <button id="toggle">
-            <i class="fa-regular fa-sun"></i>
-            <i class="fa-solid fa-moon"></i>
+            <i class="fa-regular fa-sun" id="sun"></i>
+            <i class="fa-solid fa-moon display" id="moon"></i>
         </button>
 
         <section>
@@ -21,12 +21,21 @@
             <p>Never use an insecure password again.</p>
         </section>
 
+        <section class="input">
+            <label for="pass-length">Set Password Length</label>
+            <input type="number" id="pass-length" min=0 placeholder="15">
+            <label for="special-character">Special Characters</label>
+            <input type="checkbox" id="special-character" placeholder="">
+            <label for="Numbers">Numbers</label>
+            <input type="checkbox" id="Numbers" placeholder="">
+        </section>
+
         <section class="flex">
             <button id="submit">Generate password</button>
             <hr>
             <div class="result">
-                <output name="result"  id="pass-one" >67</output>
-                <output name="result"  id="pass-two" >76</output>
+                <output name="result"  id="pass-one" ></output>
+                <output name="result"  id="pass-two" ></output>
             </div>
         </section>
 

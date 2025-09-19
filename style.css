@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #000000;
+}
+
 main {
-    width: 60%;
-    height: 55%;
+    width: 800px;
+    height: 700px;
     background-color:#1F2937;
     position: absolute;
     left: 0;
@@ -15,6 +19,7 @@ main {
     bottom: 0;
     margin: auto;
     padding: 80px 26px;
+    border-radius: 10px;;
 }
 
 
@@ -38,6 +43,33 @@ p {
     color: #D5D4D8;
 }
 
+.input {
+    display: flex;
+    gap: 10px;
+   
+}
+
+label {
+    color: #10B981;
+    font-size: 22px;
+}
+
+input {
+    width: 60px;
+    border: none;
+    outline: none;
+    background-color:  #273549;
+    color: #10B981;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    accent-color: #10B981;
+    font-size: 22px;
+}
+
 .flex {
     display: flex;
     flex-direction: column;
@@ -52,6 +84,7 @@ output {
     font-size: 18px;
     border-radius: 10px;
     width: 40%;
+    border: none;
 }
 
 hr {
@@ -64,18 +97,30 @@ hr {
 }
 
 output {
+    text-align: center;
+    height: 50px;
     background-color:  #273549;
     color: #273549;
     border: none;
     outline: none;
     width: 50%;
     margin: 20px 0;
+    color: #10B981;
 }
 
 /* change mood css */
 
 .light {
     background-color: #ECFDF5;
+}
+
+.light h1 {
+    color: #111827;
+
+}
+.light P {
+    color: #6B7280;
+
 }
 
 .display {
@@ -92,3 +137,4 @@ output {
     border: none;
     outline: none;
 }
+
