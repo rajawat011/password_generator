@@ -39,13 +39,13 @@ button.addEventListener('click', () => {
     if (number.checked && specialCharacter.checked) {
         characters = allCharacters
     } else if (number.checked) {
-        characters = allCharacters.slice( 0 ,allCharacters.indexOf("9"))
+        characters = allCharacters.slice( 0 ,allCharacters.indexOf("~"))
     } else if (specialCharacter.checked) {
-        characters = allCharacters.slice( 0 ,allCharacters.indexOf("z")) + allCharacters.slice( allCharacters.indexOf("~") , allCharacters.length)
+        characters = allCharacters.slice( 0 ,allCharacters.indexOf("0")) + allCharacters.slice( allCharacters.indexOf("~") , allCharacters.length)
     } else {
-        characters = allCharacters.slice( 0 ,allCharacters.indexOf("z"))
+        characters = allCharacters.slice( 0 ,allCharacters.indexOf("0"))
     }
-
+    
     // empty the inner text of output
 
     passOne.innerText = "";
