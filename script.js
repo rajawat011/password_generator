@@ -92,3 +92,7 @@ function copyText(innerText) {
 
 passOne.addEventListener('click', ()=>{copyText(passOne.innerText)} )
 passTwo.addEventListener('click', ()=>{copyText(passTwo.innerText)} )
+
+
+
+Tum mere ho is pal mere ho kal sayad yeh alam na rahe kuck 
